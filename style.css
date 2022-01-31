@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAEAEA;
+    font-family: 'Prompt', sans-serif;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+
+}
+
+
+
+.firstRow, .secondRow, .thirdRow, .fourthRow, .fifthRow, .sixthRow {
+    display: flex;
+    width: 200px;
+}
+
+.firstRow {
+    flex-direction: column;
+}
+
+#prev-output {
+    border: solid red 1px;
+    flex-basis: 100%;
+    min-height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+#current-output {
+    border: solid red 1px;
+    flex-basis: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5px;
+    font-size: 24px;
+}
+
+
+.secondRow > button:first-of-type, .sixthRow > button:first-of-type {
+    flex-basis: 50%;
+}
